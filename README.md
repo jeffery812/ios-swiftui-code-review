@@ -36,6 +36,28 @@ Focus on bugs, threading, memory/lifecycle, architectural consistency, and missi
 Return Issues & Suggestions, Optional Improvements, and Approval Recommendation.
 ```
 
+## Global Install Prompt (Codex/Claude)
+
+Use this prompt to ask Codex or Claude to install/update the skill globally:
+
+```text
+Install this skill globally from GitHub: https://github.com/jeffery812/ios-swiftui-code-review
+
+Requirements:
+1. Install to my global skills directory (not project-local):
+   - Codex: ~/.codex/skills/ios-swiftui-code-review
+   - Claude Code: ~/.claude/skills/ios-swiftui-code-review
+2. If already installed, replace it with the latest version from GitHub.
+3. Ensure it is enabled in config:
+   - Codex: ~/.codex/config.toml -> [[skills.config]] path="~/.codex/skills/ios-swiftui-code-review/SKILL.md", enabled=true
+   - Claude Code: update equivalent global skills config if needed.
+4. Verify by showing:
+   - installed folder path
+   - SKILL.md exists
+   - agents/openai.yaml exists
+5. Tell me when I should restart the app.
+```
+
 ## Publishing to GitHub
 
 1. Ensure this folder is committed:
