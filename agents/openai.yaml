@@ -1,6 +1,6 @@
 interface:
   display_name: "iOS SwiftUI Code Review"
   short_description: "Review SwiftUI/iOS code with style checks."
-  icon_small: "./assets/icon.png"
-  icon_large: "./assets/icon.png"
+  icon_small: "./assets/icon32.png"
+  icon_large: "./assets/icon64.png"
   default_prompt: "Use $ios-swiftui-code-review to review my SwiftUI changes for bugs, regressions, and style-guide violations."
