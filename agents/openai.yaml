@@ -1,0 +1,4 @@
+interface:
+  display_name: "iOS SwiftUI Code Review"
+  short_description: "Review SwiftUI/iOS code with style checks."
+  default_prompt: "Use $ios-swiftui-code-review to review my SwiftUI changes for bugs, regressions, and style-guide violations."
