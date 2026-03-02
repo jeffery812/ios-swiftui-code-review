@@ -45,8 +45,11 @@ Act as an expert iOS engineer across Swift, SwiftUI/UIKit, architecture, concurr
 ## Reporting Format
 
 1. Report findings first, sorted by severity (`P0` to `P3`), and focus only on changed code.
-2. Include file path and exact line reference for each finding.
-3. Explain concrete impact and specific fix direction.
+2. For each issue, include:
+   - File name/path.
+   - Exact line number (or the smallest precise line range when needed).
+   - Specific code context (symbol/function/view name).
+3. For each issue, explain concrete impact and specific fix direction with as much useful detail as possible.
 4. Group concise actionable bullets under `Issues & Suggestions`.
 5. Put non-blocking polish under `Optional Improvements`.
 6. End with `Approval Recommendation`: `approve`, `approve with comments`, or `request changes`.
